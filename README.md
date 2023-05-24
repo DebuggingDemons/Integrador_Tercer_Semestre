@@ -1,8 +1,4 @@
-[![contrib][contrib-img]][contrib-url]
-[![commit][commit-img]][commit-url]
-[![discuss][discuss-img]][discuss-url]
-[![issues][issues-img]][issues-url]
-[![Python package][pipeline-img]][pipeline-url]
+
 
 # Proyecto Integrador
 
