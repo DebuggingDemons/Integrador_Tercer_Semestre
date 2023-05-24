@@ -7,6 +7,7 @@
 ## Barberia - App
 
 ## Descripción:
+Decidimos crear un proyecto totalmente nuevo de una aplicación web para una barbería. La idea es que los clientes puedan reservar turnos y servicios de manera fácil y rápida a través de esta plataforma online. Queremos que sea intuitiva y amigable, brindándole a la gente la comodidad de programar sus visitas sin complicaciones. Además, en el futuro iremos sumando más funciones a medida que el proyecto vaya creciendo. Por ejemplo, estamos pensando en la posibilidad reprogramar turnos, seleccionar barbero entre otras mejoras que iremos implementando para que la experiencia sea cada vez mejor. Nuestro objetivo principal es crear una aplicación web sólida y funcional que se ajuste a las necesidades tanto de los clientes como de la barbería. Estamos emocionados por este desafío y esperamos poder ofrecer una solución efectiva y satisfactoria.
 
 ## Documentación
 
