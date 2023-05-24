@@ -1,6 +1,8 @@
 
 
 # Proyecto Integrador
+![Logo_plantilla](https://github.com/DebuggingDemons/Integrador_Tercer_Semestre/assets/95662710/217856f6-cd74-4ac3-b7d0-172887ab5d49)
+
 
 ## Barberia - App
 
