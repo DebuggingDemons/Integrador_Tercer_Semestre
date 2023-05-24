@@ -6,12 +6,7 @@
 
 ## Barberia - App
 
-
-**[Notas aclaratorias:](https://github.com/Notas-aclaratorias)**
-
-
-
-
+## Descripción:
 
 ## Documentación
 
@@ -33,3 +28,15 @@
 [discuss-url]: 
 [pipeline-img]:
 [pipeline-url]:
+
+
+## INTEGRANTES
+
+
+- [Mariano Farias](https://github.com/Marianoleonardofarias)
+- [Agustín Pérez Pesce](https://github.com/Aguppesce)
+- [Braian Troncoso](https://github.com/BraianTroncoso)
+- [Franco Sebastián Genre](https://github.com/francogenre)
+- [Mario Cristian Sanchez](https://github.com/TanitoCode)
+- [Santiago Mendoza](https://github.com/SantSR)
+- [Sebastián Galván](https://github.com/SebasGalvan)
