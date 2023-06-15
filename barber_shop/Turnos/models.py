@@ -19,3 +19,8 @@ class Turno(models.Model):
             Detalles:  {self.detalle},
             Fecha: {self.fechaHora}        
         '''
+class Servicio(models.Model):
+    idServicio = models.IntegerField
+    descripcion = models.CharField(max_length=200)
+    precio = models.IntegerField
+    

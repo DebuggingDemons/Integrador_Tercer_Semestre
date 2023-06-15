@@ -6,4 +6,4 @@ class Usuario(models.Model):
     telefono = models.CharField(max_length=25)
     esBarbero = models.BooleanField() # True o False
     direccion = models.CharField(max_length=50)
-    
+
