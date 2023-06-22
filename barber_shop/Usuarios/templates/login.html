@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<form method="POST" action="{% url 'login' %}">
+      {% csrf_token %}
+      <div class="formulario">
+        <div class="contenedor_form">
+            <div class="campos_forms">
+              <p class="eqtiqueta_form">Usuario</p>
+              <input class="input_campo" type="text" name="username" placeholder="usuario" id="username">
+            </div>
+          
+            <div class="campos_forms">
+              <p class="eqtiqueta_form">Contraseña</p>
+              <input class="input_campo" type="password" name="password" placeholder="Password" id="password">
+            </div>
+
+            <div class="campos_forms" style="margin-top: 2em;">
+              <input class="boton_ver_mas" type="submit" value="Login" />
+            </div>
+        </div>
+      </div>
+</form>
+
+{% endblock %}

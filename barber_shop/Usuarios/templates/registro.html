@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+        {% load static %}
+        <h2>Formulario de Registro</h2>
+
+        <form method="POST" action="{% url 'registro' %}">
+          
+          {% csrf_token %}
+
+
+
+          <div class="formulario">
+            <div class="contenedor_form">
+              
+              <div class="campos_forms">
+                <div class="row">
+                  <p class="eqtiqueta_form col-4">Usuario</p>
+                  <i class="col error" id="i_registro_usuario">Falta usuario</i>
+                </div>
+                <input class="input_campo" type="text" name="usuario" placeholder="Usuario" id="registro_usuario">
+              </div>
+              
+              <div class="campos_forms">
+                <div class="row">
+                  <p class="eqtiqueta_form col-4">Contraseña</p>
+                  <i hidden class="col error" id="i_registro_password">Falta contraseña</i>
+                </div>
+                <input class="input_campo" type="password" name="password" placeholder="Contraseña" id="registro_password">
+              </div>
+               
+              <div class="campos_forms">
+                <p class="eqtiqueta_form">Verificar Contraseña</p>
+                <i hidden id="i_verificacion_password">Contraseña no coincide</i>
+                <i hidden id="i_verificacion_password_falta">Falta Verificacion Contraseña</i>
+                <input class="input_campo" type="password" name="verificacion_password" placeholder="Verificacion Contraseña" id="registro_ver_password">
+              </div>
+
+              <div class="campos_forms"> 
+                <p class="eqtiqueta_form">Email</p>
+                <i hidden id="i_registro_email">Falta Email</i>
+                <input class="input_campo" type="email" name="email" placeholder="Email" id="registro_email">
+              </div>
+              <div class="campos_forms">
+                <p class="eqtiqueta_form">Nombre</p>
+                <i hidden id="i_registro_nombre">Falta nombre</i>
+                <input class="input_campo" type="text" name="nombre" placeholder="Nombre" id="registro_nombre">
+              </div>
+              <div class="campos_forms">
+                <p class="eqtiqueta_form">Apellido</p>
+                <i hidden id="i_registro_apellido">Falta Apellido</i>
+                <input class="input_campo" type="text" name="apellido" placeholder="Apellido" id="registro_apellido">
+              </div>
+              
+
+
+
+
+          </div>
+          </div>
+
+           
+        </form>
+        
+        <script src="{% static 'js/registro.js'%}"></script>
+        
+{% endblock %}
+
+  
+           
