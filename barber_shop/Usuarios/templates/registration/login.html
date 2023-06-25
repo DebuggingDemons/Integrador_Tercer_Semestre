@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "registration/layout.html" %}
 
 
 {% block content %}
@@ -24,5 +24,11 @@
         </div>
       </div>
 </form>
+
+<div class="contenedor_link_log">
+  <p><a class = "links_login" href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
+  <p><a class = "links_login" href="{% url 'registro' %}">Soy Nuevo</a></p>
+</div>
+
 
 {% endblock %}

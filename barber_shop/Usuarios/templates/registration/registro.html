@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "registration/layout.html" %}
 
 {% block content %}
 
@@ -9,8 +9,6 @@
           
           {% csrf_token %}
 
-
-
           <div class="formulario">
             <div class="contenedor_form">
               
@@ -19,7 +17,7 @@
                   <p class="eqtiqueta_form col-4">Usuario</p>
                   <i class="col error" id="i_registro_usuario">Falta usuario</i>
                 </div>
-                <input class="input_campo" type="text" name="usuario" placeholder="Usuario" id="registro_usuario">
+                <input class="input_campo" type="text" name="username" placeholder="Usuario" id="registro_usuario">
               </div>
               
               <div class="campos_forms">
@@ -54,7 +52,26 @@
               </div>
               
 
+              {% if request.user.is_superuser %}
 
+              <div>
+                <label for="esBarbero">Es Barbero</label>
+                <input type="checkbox" name="esBarbero">
+              </div>
+
+                <div class="campos_forms" style="margin-top: 2em;">
+                  <input type="hidden" name="super" value="True"/>
+                  <input class="boton_enviar" type="submit" value="Registrar SU"  id="btn_registrar"/>
+                </div>
+
+              {% else %}
+
+                  <div class="campos_forms" style="margin-top: 2em;">
+                    <input type="hidden" name="super" value="False" />
+                    <input class="boton_enviar" type="submit" value="Registrar"  id="btn_registrar"/>
+                  </div>
+
+              {% endif %}
 
 
           </div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>{{ saludo }}</p>
+
+    <div class="opciones">
+        {% if user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                        <a class="boton_opciones_user" href="{% url 'logout' %}">SALIR</a>
+                        <a class="" href="{% url 'turnos' %}">TURNOS</a>  
+                {%else%}
+                    <div class="row">
+                            <a class="" href="{% url 'turnos' %}">TURNOS</a> 
+                            <a class="" href="{% url 'logout' %}">SALIR</a> 
+                    </div>
+                {% endif %}
+        {%else%}
+                <div class="row" >
+                    <a class="" href="{% url 'login'%}">LOGIN</a>
+                    <a class="" href="{% url 'registro' %}">REGISTRO</a>
+                </div>
+                    
+        {% endif %}
+    </div>
+</body>
+</html>
