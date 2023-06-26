@@ -9,41 +9,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/servicios.css' %}">
 
-    <title>Document</title>
+    <title>Servicios</title>
 </head>
 <body>
 
 
 {% block content %}
-
+<h1>Servicios</h1>
 <form method="POST" action="{% url 'servicios' %}">
       {% csrf_token %}
       <div class="formulario">
         <div class="contenedor_form">
-            <h1>Servicios</h1>
+
             <h4>AGREGAR</h4>
             <div class="campos_forms">
-              <p class="eqtiqueta_form">Nombre</p>
+              <p class="etiqueta_form">Nombre</p>
               <input class="input_campo" type="text" name="nombre" placeholder="nombre" id="nombre">
             </div>
           
             <div class="campos_forms">
-              <p class="eqtiqueta_form">Precio</p>
+              <p class="etiqueta_form">Precio</p>
               <input class="input_campo" type="input" name="precio" placeholder="precio" id="precio">
             </div>
 
             <div class="campos_forms">
-                <p class="eqtiqueta_form">Descripcion</p>
+                <p class="etiqueta_form">Descripcion</p>
                 <input class="input_campo" type="text" name="descripcion" placeholder="descripcion" id="descripcion">
               </div>
             <div class="campos_forms" style="margin-top: 2em;">
-              <input class="boton_ver_mas" type="submit" value="Guardar" />
+              <input class="boton_guardar" type="submit" value="Guardar" />
             </div>
         </div>
       </div>
 </form>
     {% endblock %}
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

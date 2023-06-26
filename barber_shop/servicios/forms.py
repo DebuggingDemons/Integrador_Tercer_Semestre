@@ -8,4 +8,7 @@ class agregarServicio(forms.Form):
         validators=[MinValueValidator(0.01)]
     )
     descripcion = forms.CharField(max_length=255)
-  
+
+    class Meta:
+            model = Servicio
+            
