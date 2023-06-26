@@ -12,10 +12,36 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HOLA</h1>
 
-    {% block content %}
-    
+
+{% block content %}
+
+<form method="POST" action="{% url 'servicios' %}">
+      {% csrf_token %}
+      <div class="formulario">
+        <div class="contenedor_form">
+            <h1>Servicios</h1>
+            <h4>AGREGAR</h4>
+            <div class="campos_forms">
+              <p class="eqtiqueta_form">Nombre</p>
+              <input class="input_campo" type="text" name="nombre" placeholder="nombre" id="nombre">
+            </div>
+          
+            <div class="campos_forms">
+              <p class="eqtiqueta_form">Precio</p>
+              <input class="input_campo" type="input" name="precio" placeholder="precio" id="precio">
+            </div>
+
+            <div class="campos_forms">
+                <p class="eqtiqueta_form">Descripcion</p>
+                <input class="input_campo" type="text" name="descripcion" placeholder="descripcion" id="descripcion">
+              </div>
+            <div class="campos_forms" style="margin-top: 2em;">
+              <input class="boton_ver_mas" type="submit" value="Guardar" />
+            </div>
+        </div>
+      </div>
+</form>
     {% endblock %}
 
 
