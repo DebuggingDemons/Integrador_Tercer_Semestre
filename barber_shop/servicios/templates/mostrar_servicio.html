@@ -12,7 +12,7 @@
 </head>
 <body>
     {% block content %}
-    <h1>Listado de Servicios</h1>
+    <h1>Servicios</h1>
     {% if servicios %}
       <ul>
         {% for servicio in servicios %}
@@ -26,7 +26,7 @@
     {% else %}
       <p>No se encontraron servicios.</p>
     {% endif %}
-    <a href="{% url 'servicios' %}">Agregar Servicios</a>
+    <a href="{% url 'servicios' %}">Agregar nuevo</a>
   {% endblock %}
 </body>
 </html>
