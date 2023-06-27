@@ -5,10 +5,8 @@ class Servicios(models.Model):
     idServicio = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=45, blank=False)
     descripcion = models.CharField(max_length=200, blank=False)
-    precio = models.DecimalField(
-        max_digits=10,
-        decimal_places=2,
-        validators=[MinValueValidator(0.01)]
+    precio = models.IntegerField(
+        validators=[MinValueValidator(1)]
     )
 
     class Meta:
