@@ -1,6 +1,6 @@
 from django import forms
     
-class agregarServicio(forms.Form):
+class formularioServicio(forms.Form):
     nombre = forms.CharField(max_length=100)
     precio = forms.CharField.DecimalField(
         max_digits=10,
