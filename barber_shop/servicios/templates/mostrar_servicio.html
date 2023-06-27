@@ -1,0 +1,32 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/servicios.css' %}">
+
+    <title>Servicios</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Listado de Servicios</h1>
+    {% if servicios %}
+      <ul>
+        {% for servicio in servicios %}
+          <li>
+            <h3>{{ servicio.nombre }}</h3>
+            <p>Precio: {{ servicio.precio }}</p>
+            <p>Descripción: {{ servicio.descripcion }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No se encontraron servicios.</p>
+    {% endif %}
+    <a href="{% url 'servicios' %}">Agregar Servicios</a>
+  {% endblock %}
+</body>
+</html>
