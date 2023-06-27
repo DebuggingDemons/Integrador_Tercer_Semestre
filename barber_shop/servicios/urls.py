@@ -7,4 +7,5 @@ urlpatterns = [
     # (temlate, vista, nombre dentro de un html)
     path('servicios/', view=views.agregarServicio, name='servicios'),
     path('servicios/mostrar_servicio', view=views.mostrarServicio, name='mostrar_servicio'),
+    path('eliminar-servicio/<int:id>/', views.eliminarServicio, name='eliminar_servicio')
 ]

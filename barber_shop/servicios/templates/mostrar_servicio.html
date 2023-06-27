@@ -21,6 +21,10 @@
             <p>Precio: {{ servicio.precio }}</p>
             <p>Descripción: {{ servicio.descripcion }}</p>
           </li>
+          <form action="{% url 'eliminar_servicio' servicio.idServicio %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Eliminar</button>
+          </form>
         {% endfor %}
       </ul>
     {% else %}
